@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022-2023 Soft-integration
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl-3.0) -->
+<odoo>
+
+    <record id="group_mrp_production_edit_finished_date" model="res.groups">
+        <field name="name">Edit manufacturing order finished date</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>
