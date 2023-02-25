@@ -14,6 +14,16 @@
             </field>
         </record>
 
+        <record id="mrp_production_tree_view_inherited" model="ir.ui.view">
+            <field name="name">mrp.production.tree.view.inherited</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_qty']" position="before">
+                    <field name="date_finished" optional="show"/>
+                </xpath>
+            </field>
+        </record>
 
 
 </odoo>
